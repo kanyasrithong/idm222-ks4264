@@ -235,7 +235,6 @@
   }
 
    #resume {
-
     h2 {
       font-size: 32px;
     }
@@ -253,6 +252,32 @@
       .resume-section {
         align-items: center;
       }
+    }
+  }
+}
+
+@media screen and (width >= 850px) {
+  #about, #about-thai {
+    flex-direction: row;
+    gap: 2rem;
+
+    .sixty {
+      width: 60%;
+    }
+
+    .fourty {
+      width: 40%;
+    }
+  }
+
+  #about-thai {
+    h1 {
+      font-size: 4rem;
+      text-align: left;
+    }
+
+    .thai-character {
+      font-size: 6rem;
     }
   }
 }
