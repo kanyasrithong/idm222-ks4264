@@ -12,14 +12,14 @@
   <body>
     <header>
       <a href="index.html">
-        <img id="logo" src="images/favicon.ico" alt="logo">
+        <img id="thai-logo" src="images/favicon.ico" alt="logo">
       </a>
       <div id="large-nav">
         <a href="creative.html">Creative</a>
         <a href="resume.html">Resume</a>
         <a href="about.html">About</a>
       </div>
-      <input type="checkbox" id="nav-toggle" class="nav-toggle" hidden />
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" hidden>
       <label for="nav-toggle" class="nav-toggle-label">
         <span></span>
         <span></span>
@@ -46,7 +46,7 @@
       </nav>
     </header>
     <main id="project">
-      <img src="images/spotify-record-player.jpeg">
+      <img src="images/spotify-record-player.jpeg" alt="3D printed record player with Arduino and Macbook opened to Python code">
       <div id="project-description">
         <h1>Spotify Record Player</h1>
         <div>
@@ -71,7 +71,7 @@
         <p>
           I had come up with a number of initial ideas, a list of which is shown below:
         </p>
-        <img src="images/spotify-record-player/ideas.png">
+        <img src="images/spotify-record-player/ideas.png" alt="Notes app ideas">
         <p>
           Out of all of these, the record player idea appealed to me the most. I thought that it would be a good way to challenge myself with this project and allow me to utilize some of my Python knowledge.
         </p>
@@ -82,10 +82,10 @@
           I first researched methods of extracting specific data from a Spotify account, in this case my own, and allow it to be processed through the Arduino. My initial search led me to a tutorial detailing how an individual went about this exact task using Python and C++ within the official Arduino IDE. My recreation and tests of both the wiring and the provided source code on their GitHub, however, led me to realize that much of the information turned out to be outdated. After much time spent attempting to debug and update the program, I soon realized that finding an alternative method would end up being less time consuming in the long run.
         </p>
         <div class="two-img">
-          <img src="images/spotify-record-player/arduino-code.png" alt="">
-          <img src="images/spotify-record-player/python-code.png">
+          <img src="images/spotify-record-player/arduino-code.png" alt="Arduino code used in project">
+          <img src="images/spotify-record-player/python-code.png" alt="Python code used in project">
         </div>
-        <img src="images/spotify-record-player/spotify-api.png" alt="">
+        <img src="images/spotify-record-player/spotify-api.png" alt="Screenshot of Spotify API Dashboard with project">
         <p>
           Fortunately, I stumbled across another GitHub page detailing how to go about the task through the use of Spotify&#39;s Web API in addition to the previously mentioned programs. After creating my own Spotify for Developers account and creating an application to reference within my Python program, I once again debugged and updated other necessary aspects of the program in order for it to function properly.
         </p>
@@ -93,13 +93,13 @@
           Assembly
         </h2>
         <div class="two-column">
-          <img src="images/spotify-record-player/arduino-1.png" alt="">   
-          <img src="images/spotify-record-player/arduino-2.png" alt="">
+          <img src="images/spotify-record-player/arduino-1.png" alt="Arduino wiring from side">   
+          <img src="images/spotify-record-player/arduino-2.png" alt="Arduino wiring from top">
         </div>
         <p>
           Utilizing models I had found for parts of a miniature record player, I modified them using TinkerCAD to both be larger than the original size and to have a hollow base in order to accommodate the Arduino, all of which were eventually printed using a MakerLab 3D Printer. I had initially added a hole in order to accommodate a motor to spin the record plate, however this did not pan out in the printing process and the idea was scrapped. As for the Arduino wiring, I condensed wiring I had taken from the original tutorial I had found onto a smaller breadboard in order to fit within the hollow base.
         </p>
-        <img src="images/spotify-record-player/3d-print.png" alt="">
+        <img src="images/spotify-record-player/3d-print.png" alt="3D printed record player base">
         <h2>
           Results
         </h2>

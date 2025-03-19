@@ -4,7 +4,7 @@
     cursor: pointer;
   }
 
-  #logo:hover {
+  #thai-logo:hover {
     opacity: 80%;
   }
 
@@ -305,7 +305,7 @@
   }
 
   header {
-    #logo {
+    #thai-logo {
       width: 5rem;
     }
 
