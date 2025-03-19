@@ -6,6 +6,7 @@
     <title>Home | Kanya Srithong</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/queries.css">
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
   </head>
   <body>
@@ -13,6 +14,11 @@
       <a href="index.html">
         <img id="logo" src="images/favicon.ico" alt="logo">
       </a>
+      <div id="large-nav">
+        <a href="creative.html">Creative</a>
+        <a href="resume.html">Resume</a>
+        <a href="about.html">About</a>
+      </div>
       <input type="checkbox" id="nav-toggle" class="nav-toggle" hidden />
       <label for="nav-toggle" class="nav-toggle-label">
         <span></span>
@@ -41,49 +47,57 @@
     </header>
     <main>
       <div id="hero">
-        <h1>
-          Kanya<br>Srithong
-        </h1>
-        <p>
-          UX/UI Designer 🌱
-        </p>
+        <div>
+          <h1>
+            Kanya<br>Srithong
+          </h1>
+          <p>
+            UX/UI&nbsp;Designer&nbsp;🌱
+          </p>
+        </div>
         <img id="headshot" src="images/professional-photo.png" alt="Kanya headshot">
         <p>Check out some of my work below!</p>
       </div>
       <div id="projects">
         <div class="project">
           <img src="images/drexel-scheduler.png" alt="Drexel Scheduler thumbnail">
-          <h2>
-            Drexel Scheduler
-          </h2>
-          <p>
-            Usability evaluation and redesign of a student-made website 
-            inspired by Don Norman's Design Principles
-          </p>
-            <a href="drexel-scheduler.html">
-              Check it out!
-            </a>
+          <div class="description">
+            <h2>
+              Drexel Scheduler
+            </h2>
+            <p>
+              Usability evaluation and redesign of a student&#8209;made website 
+              inspired by Don Norman's Design&nbsp;Principles
+            </p>
+              <a href="drexel-scheduler.html">
+                Check it out!
+              </a>
+          </div>
         </div>
         <div class="project">
           <img src="images/spotify-record-player.jpeg"   alt="Spotify Record Player thumbnail">
-          <h2>
-            Spotify Record Player
+          <div class="description">
+            <h2>
+            Spotify Record&nbsp;Player
           </h2>
           <p>
-            Spotify API and Arduino-powered song and artist display 
+            Spotify API and Arduino&#8209;powered song&nbsp;and&nbsp;artist&nbsp;display 
           </p>
             <a href="spotify-record-player.html">
               Check it out!
             </a>
+          </div>
         </div>
         <div class="project">
           <img src="images/proud-thai-cookery.png" alt="Proud Thai Cookery thumbnail">
-          <h2>
-            Proud Thai Cookery Website Redesign
-          </h2>
-          <p>
-            Work in Progress ✏️ 
-          </p>
+          <div class="description">
+            <h2>
+              Proud Thai Cookery Website Redesign
+            </h2>
+            <p>
+              Work in Progress ✏️ 
+            </p>
+          </div>
         </div>
       </div>
     </main>

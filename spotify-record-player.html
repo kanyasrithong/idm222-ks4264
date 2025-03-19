@@ -6,6 +6,7 @@
     <title>Spotify Record Player | Kanya Srithong</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/queries.css">
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
   </head>
   <body>
@@ -13,6 +14,11 @@
       <a href="index.html">
         <img id="logo" src="images/favicon.ico" alt="logo">
       </a>
+      <div id="large-nav">
+        <a href="creative.html">Creative</a>
+        <a href="resume.html">Resume</a>
+        <a href="about.html">About</a>
+      </div>
       <input type="checkbox" id="nav-toggle" class="nav-toggle" hidden />
       <label for="nav-toggle" class="nav-toggle-label">
         <span></span>
@@ -43,14 +49,16 @@
       <img src="images/spotify-record-player.jpeg">
       <div id="project-description">
         <h1>Spotify Record Player</h1>
-        <h3>
-          Duration<br>May - June 2024<br>(1 Mo.)
-        </h3>
-        <h3>
-          Tools<br>Arduino, Python, C++, TinkerCAD, 3D Printer
-        </h3>
+        <div>
+          <h3>
+            Duration<br>May - June 2024<br>(1 Mo.)
+          </h3>
+          <h3>
+            Tools<br>Arduino, Python, C++, TinkerCAD, 3D Printer
+          </h3>
+        </div>
       </div>
-      <div>
+      <div id="project-contents">
         <h2>
           Overview
         </h2>
@@ -73,8 +81,10 @@
         <p>
           I first researched methods of extracting specific data from a Spotify account, in this case my own, and allow it to be processed through the Arduino. My initial search led me to a tutorial detailing how an individual went about this exact task using Python and C++ within the official Arduino IDE. My recreation and tests of both the wiring and the provided source code on their GitHub, however, led me to realize that much of the information turned out to be outdated. After much time spent attempting to debug and update the program, I soon realized that finding an alternative method would end up being less time consuming in the long run.
         </p>
-        <img src="images/spotify-record-player/arduino-code.png" alt="">
-        <img src="images/spotify-record-player/python-code.png">
+        <div class="two-img">
+          <img src="images/spotify-record-player/arduino-code.png" alt="">
+          <img src="images/spotify-record-player/python-code.png">
+        </div>
         <img src="images/spotify-record-player/spotify-api.png" alt="">
         <p>
           Fortunately, I stumbled across another GitHub page detailing how to go about the task through the use of Spotify&#39;s Web API in addition to the previously mentioned programs. After creating my own Spotify for Developers account and creating an application to reference within my Python program, I once again debugged and updated other necessary aspects of the program in order for it to function properly.
@@ -82,8 +92,10 @@
         <h2>
           Assembly
         </h2>
-        <img src="images/spotify-record-player/arduino-1.png" alt="">   
-        <img src="images/spotify-record-player/arduino-2.png" alt="">
+        <div class="two-column">
+          <img src="images/spotify-record-player/arduino-1.png" alt="">   
+          <img src="images/spotify-record-player/arduino-2.png" alt="">
+        </div>
         <p>
           Utilizing models I had found for parts of a miniature record player, I modified them using TinkerCAD to both be larger than the original size and to have a hollow base in order to accommodate the Arduino, all of which were eventually printed using a MakerLab 3D Printer. I had initially added a hole in order to accommodate a motor to spin the record plate, however this did not pan out in the printing process and the idea was scrapped. As for the Arduino wiring, I condensed wiring I had taken from the original tutorial I had found onto a smaller breadboard in order to fit within the hollow base.
         </p>
@@ -105,7 +117,6 @@
             <source src="videos/record-player.mp4" type="video/mp4">
           </video>
         </figure>
-        
       </div>
     </main>
     <footer id="footer">

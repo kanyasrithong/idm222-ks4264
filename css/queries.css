@@ -1,0 +1,242 @@
+
+@media (hover) {
+  a {
+    cursor: pointer;
+  }
+
+  #logo:hover {
+    opacity: 80%;
+  }
+
+  .nav > a:hover {
+    opacity: 80%;
+  }
+
+  .footer-icon:hover {
+    opacity: 80%;
+  }
+
+  .project > a:hover {
+    opacity: 80%;
+  }
+
+  #large-nav {
+    a:hover {
+      opacity: 80%;
+    }
+  }
+}
+
+@media screen and (width >= 600px) {
+  h2 {
+    font-size: 2rem;
+  }
+
+  #hero {
+    p {
+      font-size: 1.5rem;
+      width: 14rem;
+    }
+  }
+
+  #about, #footer {
+    p {
+      font-size: 1.25rem;
+    }
+  }
+
+  #project {
+    #project-contents {
+      align-self: center;
+      width: 90%;
+    }
+  }
+
+  #project-description {
+    div {
+      flex-direction: row;
+
+      h3 {
+        margin: 0;
+      }
+    }
+  }
+}
+
+@media screen and (width >= 650px) {
+
+  .project {
+    align-items: center;
+    display: grid;
+    column-gap: 24px;
+    grid-template-areas:
+    "a a a a a b b b";
+    grid-template-columns: repeat(8, 1fr);
+    background-color: var(--tan);
+    padding: 2rem 2rem;
+    width: 100vw;
+
+    img {
+      grid-area: a;
+      width: 100%;
+    }
+
+    .description {
+      align-items: baseline;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      grid-area: b;
+      justify-items: space-around;
+      text-align: left;
+      width: 100%;
+    
+      p {
+        margin: 0;
+      }
+    
+      a {
+        background-color: var(--brown);
+        border-radius: 1rem;
+        color: var(--cream);
+        margin: 1rem 0 0 0;
+        padding: 1rem 3rem;
+        text-decoration: none;
+      }
+    }
+
+    &:nth-child(2) {
+      background-color: var(--cream);
+      grid-template-areas:
+      "a a a b b b b b";
+
+      img {
+        grid-area: b;
+        width: 100%;
+      }
+
+      .description {
+        align-items: flex-end;
+        grid-area: a;
+        text-align: right;
+      }
+    }
+  }
+}
+
+@media screen and (width >= 800px) {
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  h3 {
+    font-size: 32px;
+    line-height: 1.5em;
+  }
+
+  h4 {
+    font-size: 24px;
+  }
+
+  #hero {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: left;
+    padding: 0 4rem;
+
+    h1 {
+      font-size: 4rem;
+    }
+  
+    p {
+      margin: 1rem 0;
+      width: 100%
+    }
+
+    #headshot {
+      height: auto;
+      width: 35vw;
+    }
+  }
+
+  .project {
+    .description {
+      h2 {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  #project {
+    #project-description {
+      h3 {
+        width: 15rem;
+        margin: 0 1rem;
+      }
+
+      h3::first-line {
+        font-size: 36px;
+      }
+    }
+  }
+}
+
+@media screen and (width >= 800px) {
+  p {
+    font-size: 1.25rem;
+  }
+}
+
+@media screen and (width>=900px) {
+  html {
+    --nav-height: 5rem
+  }
+
+  header {
+    #logo {
+      width: 5rem;
+    }
+
+    label {
+      display: none;
+    }
+
+    #large-nav {
+      display: inline;
+    }
+  }
+
+  #footer {
+    height: 6rem;
+    p {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+@media screen and (width>= 950px) {
+  #project {
+    #project-contents {
+      width: 855px;
+    }
+  }
+
+  .two-column {
+    display: grid;
+    align-items: flex-start;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+
+    img {
+      object-fit: contain;
+      width: 95%;
+    }
+  }
+}

@@ -6,6 +6,7 @@
     <title>Drexel Scheduler | Kanya Srithong</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/queries.css">
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
   </head>
   <body>
@@ -13,6 +14,11 @@
       <a href="index.html">
         <img id="logo" src="images/favicon.ico" alt="logo">
       </a>
+      <div id="large-nav">
+        <a href="creative.html">Creative</a>
+        <a href="resume.html">Resume</a>
+        <a href="about.html">About</a>
+      </div>
       <input type="checkbox" id="nav-toggle" class="nav-toggle" hidden />
       <label for="nav-toggle" class="nav-toggle-label">
         <span></span>
@@ -43,17 +49,19 @@
       <img src="images/drexel-scheduler.png">
       <div id="project-description">
         <h1>Drexel Scheduler</h1>
-        <h3>
-          Role<br>UX/UI Designer
-        </h3>
-        <h3>
-          Duration<br>May - June 2024<br>(1 Mo.)
-        </h3>
-        <h3>
-          Tools<br>Draw.io
-        </h3>
+        <div>
+          <h3>
+            Role<br>UX/UI Designer
+          </h3>
+          <h3>
+            Duration<br>May - June 2024<br>(1 Mo.)
+          </h3>
+          <h3>
+            Tools<br>Draw.io
+          </h3>
+        </div>
       </div>
-      <div>
+      <div id="project-contents">
         <h2>
           Overview
         </h2>
@@ -96,10 +104,12 @@
         <h4>
           Original
         </h4>
-        <img src="images/drexel-scheduler/original.png" alt="Original Scheduler interface">
-        <p>
-          At first glance, the overall visibility of the Drexel Scheduler website was quite overwhelming to look at, with the multiple sections and confusing layout preventing a clear focal point for the viewer to be drawn to. The main culprits perpetuating this issue was the table-wide filters above the table, which took up an unnecessary amount of space at the top of the screen.
-        </p>
+        <div class="two-column">
+          <p>
+            At first glance, the overall visibility of the Drexel Scheduler website was quite overwhelming to look at, with the multiple sections and confusing layout preventing a clear focal point for the viewer to be drawn to. The main culprits perpetuating this issue was the table-wide filters above the table, which took up an unnecessary amount of space at the top of the screen.
+          </p>
+          <img src="images/drexel-scheduler/original-highlight.png" alt="Original Scheduler interface">
+        </div>
         <h4>
           Redesign
         </h4>
@@ -117,8 +127,10 @@
         <h4>
           Original
         </h4>
-        <img src="images/drexel-scheduler/change2-before1.png" alt="Original unexpanded column filter button">
-        <img src="images/drexel-scheduler/change2-before2.png" alt="Original expanded column filter button">
+        <div class="two-column">
+          <img src="images/drexel-scheduler/change2-before1.png" alt="Original unexpanded column filter button">
+          <img src="images/drexel-scheduler/change2-before2.png" alt="Original expanded column filter button">
+        </div>
         <p>
           The original interface contained filters for each individual column in the main table. As seen in the image above, when attempting to utilize the search bar filter within the individual column filter, the word “Contains”, inequality symbols, and the word “Expression” are given as options. The word “Contains” would be relevant to include, as selecting that option implies that the results that show up would contain the user-inputted text. The inclusion of the inequality symbols as options, however, were not applicable to the filtering of non-numerical values and yet still appeared for such filters, demonstrating the lack of a constraint. As to the usage of “Expression”, the functionality of this option was also unclear. Within my personal evaluation, the inclusion of these options only served to confuse me, causing a disruption to my ability to perform my task.
         </p>
@@ -128,8 +140,10 @@
         <h4>
           Redesign
         </h4>
-        <img src="images/drexel-scheduler/change2-after1.png" alt="My unexpanded version of a Contains/Does not Contain button">
-        <img src="images/drexel-scheduler/change2-after2.png" alt="My expanded version of a Contains/Does not Contain button">
+        <div class="two-column">
+          <img src="images/drexel-scheduler/change2-after1.png" alt="My unexpanded version of a Contains/Does not Contain button">
+          <img src="images/drexel-scheduler/change2-after2.png" alt="My expanded version of a Contains/Does not Contain button">
+        </div>
         <p>
           The images above present a wireframe aiming to constrain the search filtration feature to basic, user-friendly components. It removes the inequality symbols and “Expression” options, and presents two options for the search filter dropdown: “Contains” and “Does Not Contain”. The utilization of these phrases makes it clear to the user their usage: “Contains” serves the function stated previously while “Does Not Contain” shows the options that do not include the user-inputted text.
         </p>
