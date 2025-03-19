@@ -27,6 +27,7 @@ html {
 
   --nav-height: 4rem;
   --footer-margin: 2rem;
+  width: 100%;
 }
 
 body {
@@ -187,6 +188,7 @@ header {
   align-items: center;
   display: flex;
   flex-direction: column;
+  padding-top: 1rem;
   text-align: center;
   width: 100vw;
 
@@ -232,7 +234,6 @@ header {
     align-items: center;
     display: flex;
     flex-direction: column;
-    justify-items: space-around;
     text-align: center;
 
     h2 {
@@ -293,6 +294,7 @@ header {
   background-color: var(--tan);
   display: flex;
   flex-direction: column;
+  justify-content: center;
   padding: 0 2rem;
   text-align: center;
 

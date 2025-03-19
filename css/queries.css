@@ -98,7 +98,7 @@
     }
 
     .description {
-      align-items: baseline;
+      align-items: flex-start;
       display: flex;
       flex-direction: column;
       flex-wrap: wrap;
@@ -134,6 +134,8 @@
       .description {
         align-items: flex-end;
         grid-area: a;
+        grid-column-start: 2;
+        grid-column-end: 4;
         text-align: right;
       }
     }
@@ -199,7 +201,7 @@
 
     #headshot {
       height: auto;
-      width: 35vw;
+      width: 30vw;
     }
   }
 
@@ -257,6 +259,7 @@
     h3 {
       font-size: 1.5rem;
       width: 85%;
+      max-width: 800px;
     }
 
     #art-design > div, #photography > div {
@@ -329,6 +332,11 @@
     height: 6rem;
     p {
       font-size: 1.5rem;
+      left: 2rem;
+    }
+
+    #footer-icons {
+      right: 2rem;
     }
   }
 }
@@ -371,6 +379,10 @@
       h2 {
         font-size: 2.5rem;
       }
+
+      p {
+        font-size: 20px;
+      }
     }
   }
 
@@ -380,9 +392,13 @@
     }
   }
 
-  #about {
+  #about, #about-thai {
     .fourty {
       width: 450px;
+    }
+
+    .sixty {
+      width: 650px;
     }
   }
 }
