@@ -27,6 +27,22 @@
   }
 }
 
+@media screen and (width >= 500px) {
+  #resume {
+    h2 {
+      font-size: 32px;
+    }
+
+    p {
+      font-size: 20px;
+    }
+
+    #resume-options *,.resume-text-normal {
+      font-size: 1.5rem;
+    }
+  }
+}
+
 @media screen and (width >= 600px) {
   h2 {
     font-size: 2rem;
@@ -122,6 +138,27 @@
       }
     }
   }
+
+  #resume-title {
+    flex-direction: row;
+    margin-top: 1rem;
+    overflow: auto;
+    width: 80%;
+
+    h1, h3 {
+      margin: 0;
+    }
+
+    h3 {
+      align-self: flex-end;
+    }
+
+    hr {
+      height: 2px;
+      margin-top: 1rem;
+      width: 20vw;
+    }
+  }
 }
 
 @media screen and (width >= 800px) {
@@ -186,11 +223,37 @@
       }
     }
   }
-}
 
-@media screen and (width >= 800px) {
-  p {
-    font-size: 1.25rem;
+  #resume-title, #resume-options {
+    h1 {
+      font-size: 2rem;
+    }
+
+    h3 {
+      font-size: 20px;
+    }
+  }
+
+   #resume {
+
+    h2 {
+      font-size: 32px;
+    }
+
+    p {
+      font-size: 20px;
+    }
+
+    #resume-contents {
+      justify-content: center;
+      display: grid;
+      grid-template-columns: repeat(2, 40%);
+      gap: 2rem 2rem;
+
+      .resume-section {
+        align-items: center;
+      }
+    }
   }
 }
 
@@ -213,6 +276,16 @@
     }
   }
 
+  #resume-title {
+    h1 {
+      font-size: 3rem;
+    }
+
+    h3 {
+      font-size: 32px;
+    }
+  }
+
   #footer {
     height: 6rem;
     p {
@@ -222,10 +295,9 @@
 }
 
 @media screen and (width>= 950px) {
-  #project {
-    #project-contents {
-      width: 855px;
-    }
+
+  #project-contents {
+    width: 855px;
   }
 
   .two-column {

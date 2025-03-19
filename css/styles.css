@@ -149,7 +149,8 @@ header {
 
 
 .nav-toggle:checked ~ nav {
-  top: 0;
+  top: 0px;
+  right: 0px
 }
 
 .nav-toggle:checked ~ .nav-toggle-label span:nth-child(1) {
@@ -313,10 +314,18 @@ header {
   }
 }
 
-#resume-title {
+#resume {
+  align-items: center;
   display: flex;
   flex-direction: column;
+  width: 100vw;
+}
+
+#resume-title {
   align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 100vw;
 
   h1, h3 {
@@ -335,11 +344,8 @@ header {
 }
 
 #resume-options {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
   text-align: center;
-  margin: 1rem;
+  margin: 2rem;
 
   a {
     color: var(--brown);
@@ -348,6 +354,11 @@ header {
     line-height: 30px;
     margin: 0 1rem;
   }
+}
+
+#resume-contents {
+  display: flex;
+  flex-direction: column;
 }
 
 .resume-section {
@@ -361,7 +372,8 @@ header {
   }
 
   .resume-entry {
-    margin: 0 auto 1rem auto;
+    margin-bottom: 1rem;
+    width: 100%;
     
     .resume-text-normal {
       font-size: 1.2rem;
