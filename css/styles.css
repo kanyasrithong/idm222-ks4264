@@ -1,16 +1,16 @@
 @font-face {
   font-family: Inter;
-  src: url(/fonts/Inter/Inter-VariableFont_opsz\,wght.ttf);
+  src: url('/fonts/Inter/Inter-VariableFont_opsz\,wght.ttf');
 }
 
 @font-face {
   font-family: Gloock;
-  src: url(/fonts/Gloock/Gloock-Regular.ttf);
+  src: url('/fonts/Gloock/Gloock-Regular.ttf');
 }
 
 @font-face {
   font-family: Noto-Sans-Thai;
-  src: url(/fonts/NotoSansThai-VariableFont_wdth\,wght.ttf);
+  src: url('/fonts/NotoSansThai-VariableFont_wdth\,wght.ttf');
 }
 
 * {
@@ -32,7 +32,7 @@ html {
 
 body {
   margin: var(--nav-height) 0 0 0;
-  font-family: Inter;
+  font-family: Inter, Verdana, Geneva, Tahoma, sans-serif;
 }
 
 h1 {
@@ -150,8 +150,8 @@ header {
 
 
 .nav-toggle:checked ~ nav {
-  top: 0px;
-  right: 0px
+  top: 0;
+  right: 0;
 }
 
 .nav-toggle:checked ~ .nav-toggle-label span:nth-child(1) {
@@ -168,6 +168,74 @@ header {
   right: -0.75rem;
   transform: rotate(-45deg);
   top: 1.2rem;
+}
+
+.resume-section {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  h2 {
+    margin: 1rem;
+  }
+
+  .resume-entry {
+    margin-bottom: 1rem;
+    width: 100%;
+    
+    .resume-text-normal {
+      font-size: 1.2rem;
+      margin: 0 auto 3px auto;
+    }
+
+    .resume-text-small {
+      margin: 0;
+    }
+  }
+}
+
+.project {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--tan);
+  padding: 2rem 0;
+  width: 100vw;
+
+  img {
+    width: 80vw;
+  }
+
+  .description {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    h2 {
+      font-family: Gloock, Georgia, 'Times New Roman', Times, serif;
+      font-size: 1.6rem;
+      line-height: 1.2;
+      margin: 1rem 0 0.5rem 0;
+    }
+  
+    p {
+      margin: 0 2rem;
+    }
+  
+    a {
+      background-color: var(--brown);
+      border-radius: 1rem;
+      color: var(--cream);
+      margin: 1rem 0 0 0;
+      padding: 1rem 3rem;
+      text-decoration: none;
+    }
+  }
+  &:nth-child(2) {
+    background-color: var(--cream);
+  }
 }
 
 #large-nav {
@@ -194,13 +262,12 @@ header {
 
   div {
     display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
+    flex-flow: column nowrap;
     width: fit-content;
   }
 
   h1 {
-    font-family: Gloock;
+    font-family: Gloock, Georgia, 'Times New Roman', Times, serif;
     font-size: 3rem;
     font-weight: 400;
     line-height: 1.2;
@@ -215,49 +282,6 @@ header {
   #headshot {
     border-radius: 30rem 30rem 5% 5%;
     height: 50vh;
-  }
-}
-
-.project {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  background-color: var(--tan);
-  padding: 2rem 0;
-  width: 100vw;
-
-  img {
-    width: 80vw;
-  }
-
-  .description {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-
-    h2 {
-      font-family: Gloock;
-      font-size: 1.6rem;
-      line-height: 1.2;
-      margin: 1rem 0 0.5rem 0;
-    }
-  
-    p {
-      margin: 0 2rem;
-    }
-  
-    a {
-      background-color: var(--brown);
-      border-radius: 1rem;
-      color: var(--cream);
-      margin: 1rem 0 0 0;
-      padding: 1rem 3rem;
-      text-decoration: none;
-    }
-  }
-  &:nth-child(2) {
-    background-color: var(--cream);
   }
 }
 
@@ -280,7 +304,7 @@ header {
   }
 
   h1 {
-    font-family: Gloock;
+    font-family: Gloock, Georgia, 'Times New Roman', Times, serif;
     font-size: 3rem;
     font-weight: 400;
     line-height: 1.1;
@@ -317,7 +341,7 @@ header {
   }
 
   .thai-character {
-    font-family: Noto-Sans-Thai;
+    font-family: Noto-Sans-Thai, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 64px;
     font-weight: 700;
   }
@@ -368,31 +392,6 @@ header {
 #resume-contents {
   display: flex;
   flex-direction: column;
-}
-
-.resume-section {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-
-  h2 {
-    margin: 1rem;
-  }
-
-  .resume-entry {
-    margin-bottom: 1rem;
-    width: 100%;
-    
-    .resume-text-normal {
-      font-size: 1.2rem;
-      margin: 0 auto 3px auto;
-    }
-
-    .resume-text-small {
-      margin: 0;
-    }
-  }
 }
 
 #project {
